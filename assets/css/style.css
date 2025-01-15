@@ -1056,8 +1056,7 @@ footer .container {
     line-height: 20px;
   }
   .blog_post .hide-data a.cusBtn {
-    width: 100%;
-    text-align: center;
+    margin: 0 auto;
   }
   .news-bx h2 {
     font-size: 30px;
