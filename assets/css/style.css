@@ -263,6 +263,7 @@ h4 {
 a {
   text-decoration: none !important;
   color: #fff !important;
+  transition: 0.5s ease-in-out;
 }
 img {
   width: 100%;
@@ -299,31 +300,38 @@ header .navBar img {
 .cusBtn {
     font-size: 15px;
     line-height: 9px;
-    display: inline-block;
-    padding: 20px 30px;
-    background: transparent;
+    background: #32B1D1;
     border: 1px solid #32B1D1;
-    color: #fff;
-    text-decoration: none;
     transition: 0.5s ease-in-out;
     position: relative;
     z-index: 1;
+    width: 136px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.cusBtn:before {
-    content: "";
+.cusBtn span.arrIcon {
+    padding-left: 5px;
+    display: inline-block;
     transition: 0.5s ease-in-out;
-    background: #32B1D1;
-    width: 100%;
-    height: 100%;
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 13px;
+    right: 20px;
     z-index: -1;
+    opacity: 0;
+    visibility: visible;
 }
-.cusBtn:hover:before {
-    width: 0;
-    left: unset;
-    right: 0;
+.cusBtn:hover span.arrIcon {
+    transform: none;
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    right: 10px;
+}
+.cusBtn:hover {
+    padding: 20px 28px;
+    padding-left: 0;
 }
 header nav.navbar ul.navbar-nav {
     flex-direction: row;
@@ -580,6 +588,11 @@ header nav.navbar ul.navbar-nav > li.nav-item >  a.nav-link {
     height: 160px;
     border: 1px solid #cfd3d485;
     filter: grayscale(1);
+    transition: 0.5s ease-in-out;
+}
+.secInvestor .logo-bx:hover {
+    filter: none;
+    transition: 0.5s ease-in-out;
 }
 .sliderRow {
     margin-top: 50px;
@@ -644,6 +657,19 @@ header nav.navbar ul.navbar-nav > li.nav-item >  a.nav-link {
     line-height: 30px;
     color: #fff;
 }
+.blogBtn .cusBtn {
+    margin: 0 0 0 auto;
+}
+.news-bx button.cusBtn {
+    background: transparent;
+    color: #fff;
+    margin-top: 35px;
+    border-color: #fff;
+}
+.news-bx button.cusBtn:hover {
+    background: #fff;
+    color: #32B1D1;
+}
 /**********************************************************
               FOOTER SECTION
 ***********************************************************/
@@ -681,11 +707,11 @@ footer {
     color: #000;
 }
 .news-bx form input.submit-btn {
-    margin-top: 30px;
-    width: auto;
-    padding: 10px 35px;
-    background-color: transparent;
-    color: #fff;
+    width: 145px;
+    height: 50px;
+    padding: 0;
+    color: #32B1D1;
+    position: relative;
 }
 footer .cl-two-deta {
     padding-left: 83px;
@@ -701,13 +727,14 @@ footer ul.footer_list {
     justify-content: space-between;
 }
 footer ul.footer_list li a {
-    color: #32B1D1;
-}
-footer ul.footer_list li a {
     padding: 0;
     font-size: 15px;
     line-height: 25px;
     color: #fff;
+}
+footer ul.footer_list li a:hover {
+    color: #32B1D1 !important;
+    transition: 0.5s ease-in-out;
 }
 footer ul.footer_list::before {
     content: '';
@@ -736,12 +763,18 @@ footer .social-icon {
     margin-top: 40px;
 }
 footer .social-icon a i.fa-square-facebook {
-    color: #32B1D1;
 }
 footer .social-icon a i {
     font-size: 35px;
     color: #949494;
     margin-right: 20px;
+    transition: 0.5s ease-in-out;
+}
+footer .cntct-data a:hover {
+    color: #32B1D1 !important;
+}
+footer .social-icon a i:hover {
+    color: #32B1D1;
 }
 footer .cntct-data p {
     font-size: 20px;
@@ -1199,6 +1232,9 @@ footer .container {
   h1 {
     font-size: 40px;
     line-height: 50px;
+  }
+  .blogBtn .cusBtn {
+    margin: 0 auto;
   }
 }
 

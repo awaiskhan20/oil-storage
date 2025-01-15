@@ -1,23 +1,24 @@
 jQuery(document).ready(function () {
   jQuery(".toggleBtn").hover(function () {
-    jQuery("header nav.navbar").toggleClass("show");
+    jQuery("header nav.navbar").addClass("show");
     jQuery("header .navBar").addClass("show");
   });
 
-  jQuery(".navbar-nav").mouseleave(function () {
+  jQuery("header .navbar").mouseleave(function () {
     jQuery("header nav.navbar").removeClass("show");
     jQuery("header .navBar").removeClass("show");
   });
 
   var windowsize = jQuery(window).width();
   if (windowsize < 961) {
-    jQuery(".navbar-nav").before('<button type="button" class="btn-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>');
+    jQuery(".navbar-nav").before(
+      '<button type="button" class="btn-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>'
+    );
   }
 
-  jQuery(window).resize(function () {
-    if (jQuery(window).width() >= 961) {
-      jQuery("header nav.navbar").addClass("show");
-    }
+  jQuery(".btn-close").on("click", function () {
+    jQuery("header .navBar").removeClass("show");
+    jQuery("header nav.navbar").removeClass("show");
   });
 
   jQuery(".logo_slider").owlCarousel({
