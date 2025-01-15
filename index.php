@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="images/icon.png" type="images/favicon" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="images/favicon" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -39,7 +39,17 @@
             </nav>
             <img src="assets/images/toggle.jpg" alt="Toogle Button" class="toggleBtn">
             <div class="xtraLink">
-                <a href="javascript:;" class="cusBtn">Contact Us</a>
+                <a href="javascript:;" class="cusBtn">Contact Us <span class="arrIcon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z"
+                                fill="white" />
+                            <path
+                                d="M14.7669 9.42462V13.5494C14.7669 13.6269 14.7361 13.7011 14.6814 13.7559C14.6266 13.8107 14.5523 13.8414 14.4749 13.8414C14.3974 13.8414 14.3231 13.8107 14.2684 13.7559C14.2136 13.7011 14.1828 13.6269 14.1828 13.5494L14.1833 10.1287L9.73137 14.5806C9.67667 14.6353 9.60248 14.666 9.52513 14.666C9.44777 14.666 9.37358 14.6353 9.31889 14.5806C9.26419 14.5259 9.23346 14.4517 9.23346 14.3744C9.23346 14.297 9.26419 14.2228 9.31889 14.1681L13.7708 9.71624L10.3501 9.71666C10.2726 9.71666 10.1984 9.68589 10.1436 9.63112C10.0888 9.57635 10.058 9.50207 10.058 9.42462C10.058 9.34717 10.0888 9.27289 10.1436 9.21812C10.1984 9.16335 10.2726 9.13259 10.3501 9.13259H14.4749C14.5132 9.13254 14.5512 9.14006 14.5867 9.15472C14.6221 9.16938 14.6544 9.19089 14.6815 9.21801C14.7086 9.24514 14.7301 9.27735 14.7448 9.31281C14.7594 9.34826 14.767 9.38626 14.7669 9.42462Z"
+                                fill="#32B1D1" />
+                        </svg>
+                    </span>
+                </a>
             </div>
         </div>
     </header>
@@ -81,7 +91,17 @@
                             Suspendisse platea facilisis urna enim. Elit faucibus.</h6>
                         <p>Lorem ipsum dolor sit amet consectetur. Amet ornare blandit mauris ipsum in tempus ac eget.
                             Suspendisse platea facilisis urna enim. Elit faucibus.</p>
-                        <a href="javascript:;" class="cusBtn">More About us</a>
+                        <a href="javascript:;" class="cusBtn" style="width: 165px">More About us <span class="arrIcon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z"
+                                        fill="white" />
+                                    <path
+                                        d="M14.7669 9.42462V13.5494C14.7669 13.6269 14.7361 13.7011 14.6814 13.7559C14.6266 13.8107 14.5523 13.8414 14.4749 13.8414C14.3974 13.8414 14.3231 13.8107 14.2684 13.7559C14.2136 13.7011 14.1828 13.6269 14.1828 13.5494L14.1833 10.1287L9.73137 14.5806C9.67667 14.6353 9.60248 14.666 9.52513 14.666C9.44777 14.666 9.37358 14.6353 9.31889 14.5806C9.26419 14.5259 9.23346 14.4517 9.23346 14.3744C9.23346 14.297 9.26419 14.2228 9.31889 14.1681L13.7708 9.71624L10.3501 9.71666C10.2726 9.71666 10.1984 9.68589 10.1436 9.63112C10.0888 9.57635 10.058 9.50207 10.058 9.42462C10.058 9.34717 10.0888 9.27289 10.1436 9.21812C10.1984 9.16335 10.2726 9.13259 10.3501 9.13259H14.4749C14.5132 9.13254 14.5512 9.14006 14.5867 9.15472C14.6221 9.16938 14.6544 9.19089 14.6815 9.21801C14.7086 9.24514 14.7301 9.27735 14.7448 9.31281C14.7594 9.34826 14.767 9.38626 14.7669 9.42462Z"
+                                        fill="#32B1D1" />
+                                </svg>
+                            </span></a>
                     </div>
                 </div>
             </div>
@@ -202,7 +222,18 @@
                     <span class="subHeading text-center d-block">Investors & Supporters</span>
                     <h2 class="text-center clr-Black">Trusted by top <br> Partners & Supporters</h2>
                     <div class="text-center">
-                        <a href="javascript:;" class="cusBtn">Partner with us</a>
+                        <a href="javascript:;" class="cusBtn m-auto" style="width: 165px">Partner with us <span
+                                class="arrIcon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z"
+                                        fill="white" />
+                                    <path
+                                        d="M14.7669 9.42462V13.5494C14.7669 13.6269 14.7361 13.7011 14.6814 13.7559C14.6266 13.8107 14.5523 13.8414 14.4749 13.8414C14.3974 13.8414 14.3231 13.8107 14.2684 13.7559C14.2136 13.7011 14.1828 13.6269 14.1828 13.5494L14.1833 10.1287L9.73137 14.5806C9.67667 14.6353 9.60248 14.666 9.52513 14.666C9.44777 14.666 9.37358 14.6353 9.31889 14.5806C9.26419 14.5259 9.23346 14.4517 9.23346 14.3744C9.23346 14.297 9.26419 14.2228 9.31889 14.1681L13.7708 9.71624L10.3501 9.71666C10.2726 9.71666 10.1984 9.68589 10.1436 9.63112C10.0888 9.57635 10.058 9.50207 10.058 9.42462C10.058 9.34717 10.0888 9.27289 10.1436 9.21812C10.1984 9.16335 10.2726 9.13259 10.3501 9.13259H14.4749C14.5132 9.13254 14.5512 9.14006 14.5867 9.15472C14.6221 9.16938 14.6544 9.19089 14.6815 9.21801C14.7086 9.24514 14.7301 9.27735 14.7448 9.31281C14.7594 9.34826 14.767 9.38626 14.7669 9.42462Z"
+                                        fill="#32B1D1" />
+                                </svg>
+                            </span></a>
                     </div>
                 </div>
             </div>
@@ -273,8 +304,18 @@
                     <h2 class="clr-Black">Our Blogs</h2>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="text-right">
-                        <a href="javascript:;" class="cusBtn">View All Blogs</a>
+                    <div class="blogBtn">
+                        <a href="javascript:;" class="cusBtn" style="width: 155px">View All Blogs <span class="arrIcon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z"
+                                        fill="white" />
+                                    <path
+                                        d="M14.7669 9.42462V13.5494C14.7669 13.6269 14.7361 13.7011 14.6814 13.7559C14.6266 13.8107 14.5523 13.8414 14.4749 13.8414C14.3974 13.8414 14.3231 13.8107 14.2684 13.7559C14.2136 13.7011 14.1828 13.6269 14.1828 13.5494L14.1833 10.1287L9.73137 14.5806C9.67667 14.6353 9.60248 14.666 9.52513 14.666C9.44777 14.666 9.37358 14.6353 9.31889 14.5806C9.26419 14.5259 9.23346 14.4517 9.23346 14.3744C9.23346 14.297 9.26419 14.2228 9.31889 14.1681L13.7708 9.71624L10.3501 9.71666C10.2726 9.71666 10.1984 9.68589 10.1436 9.63112C10.0888 9.57635 10.058 9.50207 10.058 9.42462C10.058 9.34717 10.0888 9.27289 10.1436 9.21812C10.1984 9.16335 10.2726 9.13259 10.3501 9.13259H14.4749C14.5132 9.13254 14.5512 9.14006 14.5867 9.15472C14.6221 9.16938 14.6544 9.19089 14.6815 9.21801C14.7086 9.24514 14.7301 9.27735 14.7448 9.31281C14.7594 9.34826 14.767 9.38626 14.7669 9.42462Z"
+                                        fill="#32B1D1" />
+                                </svg>
+                            </span></a>
                     </div>
                 </div>
             </div>
@@ -310,7 +351,17 @@
                             <div class="hide-data">
                                 <p>Lorem ipsum dolor sit amet consectetur. Amet ornare blandit mauris ipsum in
                                     tempus ac eget. Suspendisse platea facilisis urna enim.</p>
-                                <a href="javascript:;" class="cusBtn">Read More</a>
+                                <a href="javascript:;" class="cusBtn">Read More <span class="arrIcon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z"
+                                                fill="white" />
+                                            <path
+                                                d="M14.7669 9.42462V13.5494C14.7669 13.6269 14.7361 13.7011 14.6814 13.7559C14.6266 13.8107 14.5523 13.8414 14.4749 13.8414C14.3974 13.8414 14.3231 13.8107 14.2684 13.7559C14.2136 13.7011 14.1828 13.6269 14.1828 13.5494L14.1833 10.1287L9.73137 14.5806C9.67667 14.6353 9.60248 14.666 9.52513 14.666C9.44777 14.666 9.37358 14.6353 9.31889 14.5806C9.26419 14.5259 9.23346 14.4517 9.23346 14.3744C9.23346 14.297 9.26419 14.2228 9.31889 14.1681L13.7708 9.71624L10.3501 9.71666C10.2726 9.71666 10.1984 9.68589 10.1436 9.63112C10.0888 9.57635 10.058 9.50207 10.058 9.42462C10.058 9.34717 10.0888 9.27289 10.1436 9.21812C10.1984 9.16335 10.2726 9.13259 10.3501 9.13259H14.4749C14.5132 9.13254 14.5512 9.14006 14.5867 9.15472C14.6221 9.16938 14.6544 9.19089 14.6815 9.21801C14.7086 9.24514 14.7301 9.27735 14.7448 9.31281C14.7594 9.34826 14.767 9.38626 14.7669 9.42462Z"
+                                                fill="#32B1D1" />
+                                        </svg>
+                                    </span></a>
                             </div>
                         </div>
                     </div>
@@ -330,7 +381,18 @@
                         <form>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="Enter your email">
-                            <input type="submit" class="form-control submit-btn" placeholder="Submit Now">
+                            <button type="submit" class="cusBtn">Submit Now
+                                <span class="arrIcon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#32B1D1" />
+                                        <path
+                                            d="M14.7669 9.42472L14.7669 13.5495C14.7669 13.627 14.7362 13.7012 14.6814 13.756C14.6266 13.8108 14.5523 13.8415 14.4749 13.8415C14.3974 13.8415 14.3232 13.8108 14.2684 13.756C14.2136 13.7012 14.1828 13.627 14.1828 13.5495L14.1833 10.1288L9.73138 14.5807C9.67668 14.6354 9.60249 14.6661 9.52514 14.6661C9.44778 14.6661 9.3736 14.6354 9.3189 14.5807C9.2642 14.526 9.23347 14.4518 9.23347 14.3745C9.23347 14.2971 9.2642 14.2229 9.3189 14.1682L13.7708 9.71634L10.3501 9.71676C10.2726 9.71676 10.1984 9.68599 10.1436 9.63122C10.0888 9.57645 10.0581 9.50217 10.0581 9.42472C10.0581 9.34727 10.0888 9.27299 10.1436 9.21822C10.1984 9.16345 10.2726 9.13269 10.3501 9.13269L14.4749 9.13269C14.5132 9.13264 14.5512 9.14016 14.5867 9.15482C14.6222 9.16948 14.6544 9.19099 14.6815 9.21811C14.7086 9.24524 14.7301 9.27745 14.7448 9.31291C14.7594 9.34836 14.767 9.38636 14.7669 9.42472Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -349,20 +411,20 @@
                                 <p>St-123, Commercial Lane, Company <br> Address, Dubai, UAE</p>
                             </div>
                             <div class="social-icon">
-                                <a href="#!"><i class="fa-brands fa-square-facebook"></i></a>
-                                <a href="#!"><i class="fa-brands fa-square-instagram"></i></a>
-                                <a href="#!"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="javascript:;"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="javascript:;"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="javascript:;"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                             <div class="cntct-data">
                                 <div class="cntct-phn">
                                     <p>Phone</p>
-                                    <a href="#!">+97142561040</a>
+                                    <a href="tel:(+97142561040)">+97142561040</a>
                                 </div>
                                 <div class="cntct-mail">
                                     <p>Email</p>
-                                    <a href="#!">info@company.com</a>
+                                    <a href="mailto:(info@company.com)">info@company.com</a>
                                 </div>
                             </div>
                         </div>

@@ -1,10 +1,10 @@
 jQuery(document).ready(function () {
   jQuery(".toggleBtn").hover(function () {
-    jQuery("header nav.navbar").toggleClass("show");
+    jQuery("header nav.navbar").addClass("show");
     jQuery("header .navBar").addClass("show");
   });
 
-  jQuery(".navbar-nav").mouseleave(function () {
+  jQuery("header .navbar").mouseleave(function () {
     jQuery("header nav.navbar").removeClass("show");
     jQuery("header .navBar").removeClass("show");
   });
@@ -16,10 +16,9 @@ jQuery(document).ready(function () {
     );
   }
 
-  jQuery(window).resize(function () {
-    if (jQuery(window).width() >= 961) {
-      jQuery("header nav.navbar").addClass("show");
-    }
+  jQuery(".btn-close").on('click', function() {
+    jQuery("header .navBar").removeClass("show");
+     jQuery("header nav.navbar").removeClass("show");
   });
 
   jQuery(".logo_slider").owlCarousel({
