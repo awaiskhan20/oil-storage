@@ -842,6 +842,124 @@ footer .container {
   font-weight: 400;;
 }
 
+/* Scroll Reveal Classes */
+        .anim-fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .anim-fade-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .anim-fade-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .anim-visible {
+            opacity: 1 !important;
+            transform: none !important;
+        }
+        /* Stagger delays */
+        .anim-d1 { transition-delay: 0.1s; }
+        .anim-d2 { transition-delay: 0.2s; }
+        .anim-d3 { transition-delay: 0.3s; }
+        .anim-d4 { transition-delay: 0.4s; }
+        .anim-d5 { transition-delay: 0.5s; }
+        .anim-d6 { transition-delay: 0.6s; }
+
+        /* Header scroll shadow */
+        header { transition: box-shadow 0.3s ease; }
+        header.header-scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+
+        /* Nav link hover underline */
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; left: 0;
+            width: 0; height: 2px;
+            background: #32B1D1;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+
+        /* Button shimmer + lift */
+        .cusBtn {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cusBtn::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 60px; height: 100%;
+            background: rgba(255,255,255,0.2);
+            transform: skewX(-20deg);
+            transition: left 0.5s ease;
+        }
+        .cusBtn:hover::after { left: 130%; }
+        .cusBtn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(50,177,209,0.4);
+        }
+        .cusBtn .arrIcon svg { transition: transform 0.3s ease; }
+        .cusBtn:hover .arrIcon svg { transform: translate(3px, -3px); }
+
+        /* Service box hover lift */
+        .serBox { transition: transform 0.35s ease, box-shadow 0.35s ease; }
+        .serBox:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(50,177,209,0.2);
+        }
+
+        /* Blog card hover lift */
+        .blog_post { transition: transform 0.4s ease, box-shadow 0.4s ease; }
+        .blog_post:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+
+        /* About image subtle zoom on hover */
+        .abt_ctn img { transition: transform 0.5s ease; }
+        .abt_ctn:hover img { transform: scale(1.02); }
+
+        /* Services image subtle zoom */
+        .serImg img { transition: transform 0.5s ease; }
+        .serImg:hover img { transform: scale(1.02); }
+
+        /* Logo box hover */
+        .logo-bx { transition: transform 0.3s ease; }
+        .logo-bx:hover { transform: translateY(-3px); }
+
+        /* Social icons hover */
+        .social-icon a { transition: transform 0.3s ease; }
+        .social-icon a:hover { transform: translateY(-3px); }
+
+        /* Banner section entrance animations */
+        .secBanner h1 { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.2s both; }
+        .secBanner h6 { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.4s both; }
+        .secBanner .logo_images { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.55s both; }
+        .secBanner h4 { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.7s both; }
+        .secBanner .list_para { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.85s both; }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Header slide down on load */
+        header { animation: headerSlide 0.6s cubic-bezier(0.16,1,0.3,1) both; }
+        @keyframes headerSlide {
+            from { transform: translateY(-100%); }
+            to   { transform: translateY(0); }
+        }
+
+        /* Email input focus glow */
+        .form-control { transition: box-shadow 0.3s ease; }
+        .form-control:focus { box-shadow: 0 0 0 3px rgba(50,177,209,0.25); outline: none; }
 
 
 @media screen and (max-width: 1400px) {
