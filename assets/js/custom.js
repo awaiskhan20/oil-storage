@@ -74,3 +74,46 @@ jQuery(document).ready(function () {
     },
   });
 });
+
+
+// 1. Header scroll shadow
+        window.addEventListener('scroll', function () {
+            document.querySelector('header').classList.toggle('header-scrolled', window.scrollY > 50);
+        });
+
+        // 2. Scroll Reveal
+        var animEls = document.querySelectorAll('.anim-fade-up, .anim-fade-left, .anim-fade-right');
+        var revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('anim-visible');
+                }
+            });
+        }, { threshold: 0.15 });
+        animEls.forEach(function (el) { revealObserver.observe(el); });
+
+        // 3. Number Counter Animation
+        function runCounter(el) {
+            if (el.dataset.done) return;
+            el.dataset.done = 'true';
+            var target = parseInt(el.dataset.target);
+            var suffix = el.dataset.suffix || '';
+            var duration = 1800;
+            var start = performance.now();
+            function tick(now) {
+                var elapsed = now - start;
+                var progress = Math.min(elapsed / duration, 1);
+                var eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.floor(target * eased).toLocaleString() + suffix;
+                if (progress < 1) requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+        }
+
+        var counters = document.querySelectorAll('.js-counter');
+        var counterObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) runCounter(entry.target);
+            });
+        }, { threshold: 0.4 });
+        counters.forEach(function (el) { counterObserver.observe(el); });
